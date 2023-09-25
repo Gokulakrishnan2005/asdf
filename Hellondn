@@ -1,0 +1,215 @@
+2.HTML 5 DATA VALIDATION
+
+Program:
+
+<html>
+
+<head>
+
+<body>
+
+<header> <h1>HTMLS DATA VALIDATION</h1>
+
+</header>
+
+<nav>
+
+<a href="/HTML/">HTML</a>
+
+<br></br>
+
+<a href="/Downloads/">CSS</a>
+
+<br></br>
+
+<a href="/js/">JavaScript</a>
+
+<br></br>
+
+<a href="/Scripting Language/">Scripting Language</a>
+
+</nav>
+
+<style>
+
+header
+
+height:50px;
+
+background: yellow;
+
+footer
+
+height:50px;
+
+background:orange;
+
+</style>
+
+<article>
+
+<footer>
+
+<p>
+
+HTML 5 is a Markup Language used for structuring and presenting content on the World Wide Web.The Current is Known as the HTML Living standared.It is maintained by the web Hypertext application Technology Working Group (WHATWG) a consortium of the majo browser vandors (Apple, Google, Mozilla, and Microsoft).
+
+</p>
+
+</article> </footer>
+
+</head>
+
+</body>
+
+</html>
+
+3.MATHEMATICAL EXPRESSION
+
+Program:
+
+<html>
+
+<head> <form>
+
+<div>
+
+<label for="firstnumber">First number</label><input
+
+type="text" id="firstnumber"><br></br></div>
+
+<div>
+
+<label for="lastnumber">Last number</label><input
+
+type="text" id="lastnumber"><br></br></div> <label for="opration">Select operation</label><br></br>
+
+<div>
+
+<select id="opration"required>
+
+<option value="">Select option---</option> <option value="minimum">minimum</option>
+
+<option value="maximum">maximum</option>
+
+<option value="addition">addition</option> <option value="division">division</option>
+
+<option value="multiplication">multiplication</option>
+
+<option value="subtraction">subtraction</option>
+
+</select></div>
+
+<input type="button" value="Calculate"
+
+onclick="calculator();">
+
+<p id="result"></p></form> <script>
+
+function calculator()
+var
+
+firstnumber=document.getElementById("firstnumber").val
+
+ue;
+
+var
+
+lastnumber=document.getElementById("lastnumber").valu
+
+e; var opration=document.getElementById("opration").value; document.getElementById("result").innerHTML=calc(firstn umber,lastnumber,opration);
+
+function calc(firstnumber,lastnumber,opration)
+
+var result;
+
+firstnumber=parseInt(firstnumber);
+
+lastnumber=parseInt(lastnumber);
+
+switch(opration)
+
+case "minimum":
+
+result=(firstnumber>lastnumber)?lastnumber:firstnumber;
+
+if(firstnumber==lastnumber) result="Both are equal numbers";
+
+}
+
+break;
+
+case "maximum":
+
+result=(firstnumber<lastnumber)?lastnumber:firstnumber; if(firstnumber==lastnumber)
+
+result="Both are equal numbers";
+
+}
+
+break;
+
+case "subtraction":
+
+result=firstnumber-lastnumber;
+
+break;
+
+case "addition":
+
+result=firstnumber+lastnumber;
+
+break;
+
+case "multiplication":
+
+break;
+
+case "division":
+
+result=firstnumber/lastnumber; default:
+
+break;
+
+result=firstnumber*lastnumber; } </script> </head>
+
+result="No operation is enterd"; break;
+
+return(result);
+
+</html>
+
+
+
+4.FIND THE SUM OF N NATURAL NUMBERS
+
+Program:
+
+<html>
+
+<script type="text/javascript">
+
+<head> window.alert("The Sum of "+n+"natural number is"+result); function sumnaturalnumber(n)
+
+var num=window.prompt("Enter number:",""); var n=parseInt(num);
+
+result=sumnaturalnumber(n);
+
+var i;
+
+var sum=0;
+
+for(i=1;i<=n;i++){
+
+sum = sum + i;}
+
+return(sum);
+
+}
+
+</script>
+
+</head>
+
+</html>
+
